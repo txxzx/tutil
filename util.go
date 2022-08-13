@@ -1,6 +1,5 @@
 package tutil
 
-
 /**
     @date: 2022/8/10
 **/
@@ -11,17 +10,18 @@ import (
 	"strings"
 	"time"
 )
+
 /*
 从数组里面随机取出一个数
 */
-func RandMember(rand []int32) int32{
+func RandMember(rand []int32) int32 {
 	// 没有随机数种子会出现每次随机的数都是一样的
-	r  :=mathRand.New(mathRand.NewSource(time.Now().UnixNano()))
+	r := mathRand.New(mathRand.NewSource(time.Now().UnixNano()))
 	// 根据随机的数取出数据
 	rint := r.Intn(len(rand))
 	member := rand[rint]
 	// 获取对应的随机数的个数 会随机到0
-	member = int32(r.Intn(20)+1)
+	member = int32(r.Intn(20) + 1)
 	return member
 }
 
@@ -30,15 +30,15 @@ func RandMember(rand []int32) int32{
  * @param x int整型
  * @return int整型
  */
-func reverse( x int ) int {
+func reverse(x int) int {
 	// write code here
-	res:=0
-	for x!=0{
-		res = res*10+x%10
-		x/=10
+	res := 0
+	for x != 0 {
+		res = res*10 + x%10
+		x /= 10
 	}
 	// 判断是否溢出
-	if res>(1<<31)-1 || res< -(1<<31)-1{
+	if res > (1<<31)-1 || res < -(1<<31)-1 {
 		return 0
 	}
 	return res

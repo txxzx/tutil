@@ -8,16 +8,15 @@ import "sort"
 
 type student struct {
 	name string
-	age int
+	age  int
 }
 
-func sortPaiXu(){
-	stu := []student{{"h",20},{"a",23},{"h",21}}
-	sort.Slice(stu,func(i,j int)bool{
+func sortPaiXu() {
+	stu := []student{{"h", 20}, {"a", 23}, {"h", 21}}
+	sort.Slice(stu, func(i, j int) bool {
 		if stu[i].name == stu[j].name {
-			return  stu[i].age  > stu[j].age
+			return stu[i].age > stu[j].age
 		}
-		return  stu[i].name < stu[j].name
+		return stu[i].name < stu[j].name
 	})
 }
-

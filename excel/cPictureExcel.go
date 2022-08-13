@@ -5,10 +5,9 @@ import (
 
 	"github.com/360EntSecGroup-Skylar/excelize"
 
-	_"image/gif"
+	_ "image/gif"
 	_ "image/jpeg"
 	_ "image/png"
-
 )
 
 func main() {
