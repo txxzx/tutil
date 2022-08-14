@@ -6,6 +6,8 @@ package tutil
 
 import (
 	"fmt"
+	"github.com/golang/go/src/math/rand"
+	tp "github.com/henrylee2cn/teleport"
 	mathRand "math/rand"
 	"strings"
 	"time"
@@ -20,7 +22,7 @@ func RandMember(rand []int32) int32 {
 	// 根据随机的数取出数据
 	rint := r.Intn(len(rand))
 	member := rand[rint]
-	// 获取对应的随机数的个数 会随机到0
+	// 获取对应的随机数 生成一个1-20的随机数 会随机到0
 	member = int32(r.Intn(20) + 1)
 	return member
 }
@@ -87,4 +89,13 @@ func Transfer(num int) string {
 	chinese = strings.Replace(chinese, "零", "", -1)
 	chinese = strings.Replace(chinese, "一十", "十", -1)
 	return chinese
+}
+
+// 打乱切片元素，输出打乱后的切片
+func UpsetSlice(str []string){
+	rand.Seed(time.Now().UnixNano())
+	rand.Shuffle(len(str),func (i,j int){
+		str[i],str[j] = str[j],str[i]
+	})
+	tp.Infof("str-> %s",str)
 }
