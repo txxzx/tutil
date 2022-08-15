@@ -92,10 +92,10 @@ func Transfer(num int) string {
 }
 
 // 打乱切片元素，输出打乱后的切片
-func UpsetSlice(str []string){
+func UpsetSlice(str []string) {
 	rand.Seed(time.Now().UnixNano())
-	rand.Shuffle(len(str),func (i,j int){
-		str[i],str[j] = str[j],str[i]
+	rand.Shuffle(len(str), func(i, j int) {
+		str[i], str[j] = str[j], str[i]
 	})
-	tp.Infof("str-> %s",str)
+	tp.Infof("str-> %s", str)
 }

@@ -37,7 +37,7 @@ func (swoop Swoop) get_html_header() string {
 	if err != nil {
 		log.Fatalf("read resp err->%v", err)
 	}
-	tp.Infof("body-> %s",string(body))
+	tp.Infof("body-> %s", string(body))
 	return string(body)
 
 }

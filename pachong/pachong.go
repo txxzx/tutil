@@ -71,7 +71,7 @@ func Spider(page string, ch chan bool) {
 		log.Fatal(err)
 	}
 	docDetail.Find("#content > div > div.article > ol > li > div"). //定位到html页面指定元素
-		Each(func(i int, s *goquery.Selection) { //循环遍历每一个指定元素
+									Each(func(i int, s *goquery.Selection) { //循环遍历每一个指定元素
 			var movieData MovieData //实例化结构体
 			title := s.Find("div.info > div.hd > a > span:nth-child(1)").Text()
 			img := s.Find("div.pic > a > img")
