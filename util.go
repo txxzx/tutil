@@ -31,7 +31,7 @@ func RandMember(rand []int32) int32 {
 *
 * @param x int整型
 * @return int整型
-*/
+ */
 //func Reverse(x int) int {
 //	// write code here
 //	res := 0

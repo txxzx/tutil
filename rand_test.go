@@ -7,16 +7,17 @@ package tutil
 import (
 	"testing"
 )
-func TestRand(t *testing.T){
+
+func TestRand(t *testing.T) {
 	str := RandString(10)
-	t.Logf("string -> %s",str)
+	t.Logf("string -> %s", str)
 
 	by := RandByte(10)
-	t.Logf("tr-> %s",by)
+	t.Logf("tr-> %s", by)
 
-	i := GenPiecesCount(3,10)
-	t.Logf("%d",i)
+	i := GenPiecesCount(3, 10)
+	t.Logf("%d", i)
 
 	e := Reverse(4)
-	t.Logf("%d",e)
+	t.Logf("%d", e)
 }
