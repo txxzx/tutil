@@ -1,7 +1,7 @@
 package tutil
 
 /**
-    @date: 2022/8/10
+   @date: 2022/8/10
 **/
 
 import (
@@ -28,23 +28,23 @@ func RandMember(rand []int32) int32 {
 }
 
 /**
- *
- * @param x int整型
- * @return int整型
- */
-func reverse(x int) int {
-	// write code here
-	res := 0
-	for x != 0 {
-		res = res*10 + x%10
-		x /= 10
-	}
-	// 判断是否溢出
-	if res > (1<<31)-1 || res < -(1<<31)-1 {
-		return 0
-	}
-	return res
-}
+*
+* @param x int整型
+* @return int整型
+*/
+//func Reverse(x int) int {
+//	// write code here
+//	res := 0
+//	for x != 0 {
+//		res = res*10 + x%10
+//		x /= 10
+//	}
+//	// 判断是否溢出
+//	if res > (1<<31)-1 || res < -(1<<31)-1 {
+//		return 0
+//	}
+//	return res
+//}
 
 // 数字转换成大写
 func Transfer(num int) string {
