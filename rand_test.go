@@ -18,6 +18,6 @@ func TestRand(t *testing.T) {
 	i := GenPiecesCount(3, 10)
 	t.Logf("%d", i)
 
-	e := Reverse(4)
-	t.Logf("%d", e)
+	//e := Reverse(4)
+	//t.Logf("%d", e)
 }
