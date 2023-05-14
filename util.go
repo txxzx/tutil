@@ -6,11 +6,12 @@ package tutil
 
 import (
 	"fmt"
-	"github.com/golang/go/src/math/rand"
-	tp "github.com/henrylee2cn/teleport"
 	mathRand "math/rand"
 	"strings"
 	"time"
+
+	"github.com/golang/go/src/math/rand"
+	tp "github.com/henrylee2cn/teleport"
 )
 
 /*

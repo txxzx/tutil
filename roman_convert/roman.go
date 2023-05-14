@@ -57,7 +57,7 @@ func RomanToInt2(s string) int {
 		'M': 1000,
 	}
 	var out int
-	for i := 0; i < len(s); i++ {   // MMCMIX
+	for i := 0; i < len(s); i++ { // MMCMIX
 		if i < len(s)-1 && dict[rune(s[i])] < dict[rune(s[i+1])] {
 			// 获取value值
 			out -= dict[rune(s[i])]
