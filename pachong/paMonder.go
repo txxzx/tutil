@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	tp "github.com/henrylee2cn/teleport"
 	"io/ioutil"
 	"log"
 	"math/rand"
@@ -11,6 +10,8 @@ import (
 	"regexp"
 	"strconv"
 	"time"
+
+	tp "github.com/henrylee2cn/teleport"
 )
 
 type Swoop struct {

@@ -3,13 +3,14 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"github.com/PuerkitoBio/goquery"
-	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"log"
 	"net/http"
 	"regexp"
 	"strconv"
 	"strings"
+
+	"github.com/PuerkitoBio/goquery"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 const (

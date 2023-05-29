@@ -10,11 +10,11 @@ import (
 **/
 
 func TestRoman(t *testing.T) {
-      sr := IntToRoman(2909)
-	  log.Println(sr)
+	sr := IntToRoman(2909)
+	log.Println(sr)
 }
 
-func TestRomanToInt2(t *testing.T){
+func TestRomanToInt2(t *testing.T) {
 	i := RomanToInt2("MMCMIX")
 	log.Println(i)
 }

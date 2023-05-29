@@ -3,9 +3,10 @@ package tutil
 import (
 	"encoding/json"
 	"fmt"
+	"log"
+
 	"github.com/mitchellh/mapstructure"
 	"github.com/swxctx/xlog"
-	"log"
 )
 
 /**
